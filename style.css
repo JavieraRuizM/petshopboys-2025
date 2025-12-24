@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Raleway', 'Helvetica', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    overflow: hidden; /* Evita scroll innecesario en móvil */
+}
+
+.screen {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.active {
+    display: flex;
+}
+
+h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+input {
+    border: 2px solid #000;
+    border-radius: 0; /* Estilo minimalista cuadrado */
+    padding: 15px;
+    font-size: 18px;
+    width: 90%;
+    max-width: 300px;
+    outline: none;
+    font-family: inherit;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 18px 35px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 90%;
+    max-width: 300px;
+}
+
+/* Pantalla Final: Imagen de fondo */
+#pantalla-final {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('pet.png');
+    justify-content: flex-end; /* Mueve el botón hacia abajo para que se vea la foto */
+    padding-bottom: 50px;
+}
+
+#btn-control-audio {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para no tapar tanto */
+    border: 1px solid #fff;
+    font-size: 12px;
+    width: auto;
+    padding: 10px 20px;
+}
